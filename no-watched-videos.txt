@@ -1,7 +1,7 @@
 ! Title: YouTube Annoyances (Hides Watched Videos)
 ! Description: Cleans up YouTube UI and disabled annoying elements
 ! Version: 1.0
-! TimeUpdated: 2025-08-27T23:14:12+00:00
+! TimeUpdated: 2025-08-28T09:14:12+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/Mnky313/uBlock_YouTube_Filters
 
@@ -65,10 +65,6 @@ youtube.com###sponsor-button
 
 ! Hide playlists on homepage
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer.ytd-rich-grid-renderer:has(yt-collections-stack)
-
-! Paid content overlay
-youtube.com##.ytp-paid-content-overlay-link
-youtube.com##.ytdTalkToRecsFlowRendererHost
 
 ! Sidebar Items:
 youtube.com##ytd-guide-section-renderer:has([title="Shopping"],[title="YouTube Premium"],[title="Settings"])
