@@ -67,6 +67,7 @@ youtube.com##ytd-guide-section-renderer:has([title="Shopping"],[title="YouTube P
 youtube.com###guide-links-primary
 youtube.com###guide-links-secondary
 youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"],a[title="Playlists"],a[title="Watch later"],a[title="Liked videos"])
+youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
 ! Move history to top section
 youtube.com###header-entry
 youtube.com##ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child):style(border-top: 0px !important; margin-top: 0px !important; padding-top: 0px !important)
