@@ -61,6 +61,9 @@ youtube.com##:is(ytd-rich-item-renderer,ytd-grid-video-renderer,ytd-compact-vide
 ! Teasers
 youtube.com##.ytp-cards-teaser
 
+! Premieres
+youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(button[aria-label='You’ll be notified at the scheduled start time.'])
+
 ! Hide buttons below videos
 youtube.com###flexible-item-buttons
 youtube.com###sponsor-button
