@@ -55,7 +55,7 @@ youtube.com##.ytp-cards-teaser
 
 ! Premieres
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(button[aria-label='You’ll be notified at the scheduled start time.'])
-youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(button[title='You’ll be notified at the scheduled start time.'])
+youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has-text(/Premieres [0-9]+\/[0-9]+\/[0-9]+,/)
 
 ! Hide buttons below videos
 youtube.com###flexible-item-buttons
