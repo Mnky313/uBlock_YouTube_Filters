@@ -1,7 +1,7 @@
 ! Title: YouTube Annoyances (Hides Watched Videos)
 ! Description: Cleans up YouTube UI and disabled annoying elements
 ! Version: 1.1
-! TimeUpdated: 2025-09-05T14:46:11+00:00
+! TimeUpdated: 2025-10-07T23:14:16+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/Mnky313/uBlock_YouTube_Filters
 
@@ -16,11 +16,11 @@ youtube.com##ytd-ghost-grid-renderer
 
 ! Hide Watched videos
 ! Homepage
-youtube.com##ytd-rich-item-renderer:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
+youtube.com##:not(:matches-path(/feed))ytd-rich-item-renderer:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 ! Subs Feed (disabled)
 ! youtube.com##ytd-rich-item-renderer:has(div.ytd-thumbnail-overlay-resume-playback-renderer:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 ! Recommendations
-youtube.com##yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
+youtube.com##:not(:matches-path(/feed))yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 
 ! Hide paid videos
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only)
@@ -97,4 +97,3 @@ youtube.com##div.style-scope.ytd-thumbnail-overlay-resume-playback-renderer:styl
 
 ! Watched
 youtube.com##ytd-thumbnail:has(#progress), yt-thumbnail-view-model:has(.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment):style(opacity: 0.3;)
-
