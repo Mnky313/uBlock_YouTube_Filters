@@ -14,6 +14,9 @@ youtube.com###contents.ytd-rich-grid-renderer > :not(ytd-rich-item-renderer, ytd
 youtube.com##ytd-rich-item-renderer[is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important)
 youtube.com##ytd-ghost-grid-renderer
 
+! New shorts shelf
+www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
+
 ! Hide Watched videos
 ! Homepage
 youtube.com##:not(:matches-path(/feed))ytd-rich-item-renderer:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
