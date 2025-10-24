@@ -100,3 +100,30 @@ youtube.com##div.style-scope.ytd-thumbnail-overlay-resume-playback-renderer:styl
 
 ! Watched
 youtube.com##ytd-thumbnail:has(#progress), yt-thumbnail-view-model:has(.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment):style(opacity: 0.3;)
+
+! Shrink new player controls
+youtube.com###movie_player:style(--yt-delhi-big-mode-bottom-controls-height: 48px !important)
+youtube.com###movie_player:style(--yt-delhi-big-mode-pill-top-height: 6px !important)
+youtube.com###movie_player:style(--yt-delhi-big-mode-pill-height: 36px !important)
+
+youtube.com###movie_player:style(--yt-delhi-bottom-controls-height: 48px !important)
+youtube.com###movie_player:style(--yt-delhi-pill-top-height: 6px !important)
+youtube.com###movie_player:style(--yt-delhi-pill-height: 36px !important)
+
+youtube.com###movie_player:style(--yt-delhi-bottom-controls-height-xsmall-width-mode: 48px !important)
+
+youtube.com##.ytp-play-button:style(margin-top: 6px !important; width: 36px !important; height: 36px !important)
+youtube.com##.ytp-play-button svg:style(padding: 6px !important; width: 24px !important; height: 24px !important)
+
+youtube.com##.ytp-volume-icon:style(padding: 0px !important;)
+youtube.com##.ytp-volume-slider:style(min-height: 40px !important;)
+
+youtube.com##.ytp-prev-button:style(width: 36px !important)
+youtube.com##.ytp-next-button:style(width: 36px !important)
+
+! Hide floating buttons in fullscreen
+youtube.com##.ytp-overlay-bottom-right
+! Hide Tooltips
+youtube.com##.ytp-tooltip
+! Hide More Videos button
+youtube.com##.ytp-fullscreen-grid
