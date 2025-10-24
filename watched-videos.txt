@@ -120,3 +120,5 @@ youtube.com##.ytp-overlay-bottom-right
 youtube.com##.ytp-tooltip
 ! Hide More Videos button
 youtube.com##.ytp-fullscreen-grid
+! Hide Chapter list button
+youtube.com##.ytp-chapter-container
