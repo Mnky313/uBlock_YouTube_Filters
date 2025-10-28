@@ -58,8 +58,8 @@ youtube.com##.ytp-quality-menu .ytp-menuitem:has(.ytp-premium-label)
 
 ! Livestreams
 youtube.com##:is(ytd-rich-item-renderer,ytd-grid-video-renderer,ytd-compact-video-renderer,ytd-item-section-renderer):has(.badge-style-type-live-now-alternate)
-youtube.com##:is(ytd-rich-item-renderer,ytd-grid-video-renderer,ytd-compact-video-renderer,ytd-item-section-renderer):has([aria-label~="Streamed"])
-youtube.com##:is(ytd-rich-item-renderer,ytd-grid-video-renderer,ytd-compact-video-renderer,ytd-item-section-renderer):not(:has([aria-label~="Streamed"])) #metadata-line>span:last-of-type:has-text(Streamed):upward(ytd-rich-item-renderer,ytd-grid-video-renderer,ytd-compact-video-renderer,ytd-item-section-renderer)
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer.ytd-rich-grid-renderer:has-text(/Streamed [0-9]/)
+youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has-text(/Streamed [0-9]/)
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has-text(/Scheduled for [0-9]+\/[0-9]+\/[0-9]+,/)
 
 ! Teasers
