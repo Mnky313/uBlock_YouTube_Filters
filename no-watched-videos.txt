@@ -82,7 +82,7 @@ youtube.com##ytd-guide-section-renderer:has([title="Shopping"],[title="YouTube P
 youtube.com###guide-links-primary
 youtube.com###guide-links-secondary
 youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"],a[title="Playlists"],a[title="Watch later"],a[title="Liked videos"])
-youtube.com##ytd-mini-guide-entry-renderer[aria-label="Shorts"]
+youtube.com##ytd-mini-guide-entry-renderer:has(a[title="Shorts"])
 youtube.com###header-entry:has(a[href="/feed/you"])
 
 ! Change player colour to pink
