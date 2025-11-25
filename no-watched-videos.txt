@@ -23,11 +23,11 @@ youtube.com##:not(:matches-path(/feed))ytd-rich-item-renderer:has(div.ytThumbnai
 ! Subs Feed (disabled)
 ! youtube.com##ytd-rich-item-renderer:has(div.ytd-thumbnail-overlay-resume-playback-renderer:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 ! Recommendations
-youtube.com##:not(:matches-path(/feed))yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
+youtube.com##:not(:matches-path(/feed))ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 
 ! Hide paid videos
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only)
-youtube.com##yt-lockup-view-model:has(.yt-badge-shape__text:has-text(/Members only/))
+youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has(.yt-badge-shape__text:has-text(/Members only/))
 
 ! Hide Videos Below 1K Views
 ! Home
@@ -48,7 +48,7 @@ youtube.com##.ytdTalkToRecsFlowRendererHost
 
 ! Auto-dubbed videos
 youtube.com##ytd-rich-grid-renderer .badge-style-type-simple[aria-label="Auto-dubbed"]
-youtube.com##yt-lockup-view-model:has-text("Auto-dubbed")
+youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has-text("Auto-dubbed")
 
 ! Scroll for details on fullscreen
 youtube.com##.ytp-fullerscreen-edu-button
