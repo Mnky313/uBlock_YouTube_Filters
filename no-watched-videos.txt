@@ -23,17 +23,19 @@ youtube.com##:not(:matches-path(/feed))ytd-rich-item-renderer:has(div.ytThumbnai
 ! Subs Feed (disabled)
 ! youtube.com##ytd-rich-item-renderer:has(div.ytd-thumbnail-overlay-resume-playback-renderer:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 ! Recommendations
-youtube.com##:not(:matches-path(/feed))ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
+youtube.com##:not(:matches-path(/feed))ytd-watch-next-secondary-results-renderer > div[id='items'] > ytd-item-section-renderer > div[id="contents"] > yt-lockup-view-model:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
 
 ! Hide paid videos
+! Home/Subs Feed
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only)
-youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:has(.yt-badge-shape__text:has-text(/Members only/))
+! Recommendations
+youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > ytd-item-section-renderer > div[id="contents"] > yt-lockup-view-model:has(.yt-badge-shape__text:has-text(/Members only/))
 
 ! Hide Videos Below 1K Views
 ! Home
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer.ytd-rich-grid-renderer:not(:has-text(/[KMB] views/))
 ! Recommendations
-youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > yt-lockup-view-model:not(:has-text(/[KMB] views/))
+youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > ytd-item-section-renderer > div[id="contents"] > yt-lockup-view-model:not(:has-text(/[KMB] views/))
 
 ! Voice search
 youtube.com###voice-search-button
