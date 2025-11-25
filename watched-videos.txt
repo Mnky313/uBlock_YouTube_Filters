@@ -17,6 +17,9 @@ youtube.com##ytd-ghost-grid-renderer
 ! New shorts shelf
 www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
 
+! Shorts in Recommendations
+www.youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > ytd-item-section-renderer > div[id="contents"] > ytd-compact-video-renderer
+
 ! Hide paid videos
 ! Home/Subs Feed
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only)

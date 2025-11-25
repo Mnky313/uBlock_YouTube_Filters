@@ -17,6 +17,9 @@ youtube.com##ytd-ghost-grid-renderer
 ! New shorts shelf
 www.youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
 
+! Shorts in Recommendations
+www.youtube.com##ytd-watch-next-secondary-results-renderer > div[id='items'] > ytd-item-section-renderer > div[id="contents"] > ytd-compact-video-renderer
+
 ! Hide Watched videos
 ! Homepage
 youtube.com##:not(:matches-path(/feed))ytd-rich-item-renderer:has(div.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment:is([style*="width: 100%;"],[style*="width: 9"]:not([style="width: 9%;"]),[style*="width: 8"]:not([style="width: 8%;"]),[style*="width: 7"]:not([style="width: 7%;"]),[style*="width: 6"]:not([style="width: 6%;"]),[style*="width: 5"]:not([style="width: 5%;"])))
